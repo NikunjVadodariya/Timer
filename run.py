@@ -1,12 +1,13 @@
 import threading
 
 
-def gfg():
+def fun():
     print("Invoke API")
 
 
 if __name__ == '__main__':
-    timer = threading.Timer(5.0, gfg)
+    wait_time = 5.0 #in second
+    timer = threading.Timer(wait_time, fun)
     timer.start()
-    print("Exit\n")
+    print("Exit")
 
